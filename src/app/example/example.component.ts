@@ -26,7 +26,7 @@ export class ExampleComponent implements OnInit {
       this.examples = data;
     });
 
-    this.exampleService.load().subscribe((data) => {
+    this.exampleService.load().subscribe(() => {
       console.log('test 1')
     });
   }
