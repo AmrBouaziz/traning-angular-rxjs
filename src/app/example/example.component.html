@@ -1,0 +1,13 @@
+
+<span
+  *ngIf="exampleService.isLoading | async"
+style=" font-size: 4rem"
+
+>LOADING !!</span>
+
+<ul>
+  <li *ngFor="let example of examples" >
+    <span>{{ example.text}}</span><button (click)="deleteExample(example.id)"> X </button>
+  </li>
+
+</ul>
